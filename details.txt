@@ -1,0 +1,69 @@
+Step 1:  we need C compiler -> go to vs code website and download 
+(https://code.visualstudio.com/docs/cpp/config-msvc)
+You can install the Desktop development with C++ workload without a full Visual 
+Studio IDE installation. From the Visual Studio Downloads page, scroll down until you see 
+Tools for Visual Studio under the All Downloads 
+section and select the download for "Build Tools for Visual Studio 2022."
+
+https://visualstudio.microsoft.com/downloads/
+
+This will launch the Visual Studio Installer, which will bring up a dialog showing the 
+available Visual Studio Build Tools workloads. Check the Desktop development 
+with C++ workload and select Install.
+
+Check your Microsoft Visual C++ installation
+
+To open the Developer Command Prompt for VS, start typing 'developer' in the Windows 
+Start menu, and you should see it appear in the list of suggestions. The exact name 
+depends on which version of Visual Studio
+ or the Visual Studio Build Tools you have installed. Select the item to open the prompt.
+
+ You can test that you have the C++ compiler, cl.exe, installed correctly by typing 'cl'
+  and 
+ you should see a copyright message with the version and basic usage description.
+
+ 2) install c make
+ pip install cmake
+ to ckeck -> 
+ cmake --version
+
+ 3)install dlib
+ Ensure you have a C++ compiler installed.
+ ensure cmake installed
+
+pip install dlib
+
+#...to verify....
+import dlib
+print(dlib.__version__)
+
+4)Install  face-recognition
+
+Prerequisites
+*c++ build Tools
+*cmake  pip install cmake
+*dlib   pip install dlib
+
+pip install face-recognition
+
+Verify...
+import face_recognition
+print(face_recognition.__version__)
+
+
+5) Install cvzone
+pip install cvzone
+
+
+6)Install numpy and opencv
+pip install numpy<2      (to compatible with opencv)
+pip install opencv-contrib-python
+
+to verify
+import cv2
+print(cv2.__version__)
+
+
+
+
+
